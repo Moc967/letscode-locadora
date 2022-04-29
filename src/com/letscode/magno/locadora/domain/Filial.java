@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Queue;
 import java.util.Stack;
 
-public class Loja {
+public class Filial {
 
     public int loja;
 
@@ -14,7 +14,7 @@ public class Loja {
     Carro[] grupoCarro = new Carro[10];
     Queue<Cliente> filaEspera = new ArrayDeque<>();
 
-    public Loja(int loja, Stack<String> logLocacao, Carro[] grupoCarro, Queue<Cliente> filaEspera) {
+    public Filial(int loja, Stack<String> logLocacao, Carro[] grupoCarro, Queue<Cliente> filaEspera) {
         this.loja = loja;
         this.logLocacao = logLocacao;
         this.grupoCarro = grupoCarro;
@@ -55,7 +55,7 @@ public class Loja {
 
     @Override
     public String toString() {
-        return "Loja{" +
+        return "Filial{" +
                 "loja=" + loja +
                 ", logLocacao=" + logLocacao +
                 ", grupoCarro=" + Arrays.toString(grupoCarro) +
